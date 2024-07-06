@@ -7,3 +7,4 @@ CREATE TABLE IF NOT EXISTS user (
   password CHAR(60) NOT NULL,
   data TEXT
 );
+

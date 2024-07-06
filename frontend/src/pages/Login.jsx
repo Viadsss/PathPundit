@@ -63,7 +63,7 @@ export default function Login({ setUserData, setIsRegistering }) {
       <Card minWidth={"2xl"} p="16px">
         <form onSubmit={handleSubmit}>
           <FormControl isRequired isInvalid={error}>
-            <FormLabel>Username</FormLabel>
+            <FormLabel>Courier ID</FormLabel>
             <Input
               type="text"
               name="username"

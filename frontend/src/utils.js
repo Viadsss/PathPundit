@@ -20,6 +20,7 @@ function AddMarker({ markers, setMarkers }) {
         popUp: `Marker ${markers.length + 1}`,
       };
       console.log(e.latlng.lat, e.latlng.lng);
+      console.log(markers);
       setMarkers([...markers, newMarker]);
     },
   });
@@ -185,4 +186,3 @@ export {
   tsp,
   filterRoutesData,
 };
-

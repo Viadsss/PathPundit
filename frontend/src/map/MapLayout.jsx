@@ -109,6 +109,9 @@ export default function MapLayout({ userData, setUserData, handleLogOut }) {
       }
     }
 
+    console.log("Flat:", flat);
+    console.log("routeDetails:", routeDetails);
+
     const apiCalls = flat.map(async (pair, index) => {
       try {
         const url = "https://graphhopper.com/api/1/route";
@@ -160,9 +163,8 @@ export default function MapLayout({ userData, setUserData, handleLogOut }) {
       const matrix = createDistanceMatrix(results);
       const { finalPath, finalRes } = tsp(matrix);
       const tspRoutes = filterRoutesData(results, finalPath);
-      console.log(matrix);
-      console.log(finalRes);
-      console.log(tspRoutes);
+      console.log("Matrix:", matrix);
+      console.log("TSP Routes:", tspRoutes);
       setDistanceMatrix(matrix);
       setFilteredRoutesData(tspRoutes);
       setTspData({ finalPath, finalRes });

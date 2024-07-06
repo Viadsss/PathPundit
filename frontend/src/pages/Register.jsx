@@ -52,7 +52,8 @@ export default function Register({ setUserData, setIsRegistering }) {
     } catch (err) {
       toast({
         title: "An error occurred.",
-        description: err.response.data.message || "Username is already taken.",
+        description:
+          err.response.data.message || "Courier ID is already taken.",
         status: "error",
         duration: 5000,
         isClosable: true,
@@ -84,7 +85,7 @@ export default function Register({ setUserData, setIsRegistering }) {
             />
           </FormControl>
           <FormControl isRequired>
-            <FormLabel mt={"12px"}>Username</FormLabel>
+            <FormLabel mt={"12px"}>Courier ID</FormLabel>
             <Input
               type="text"
               name="username"
