@@ -1,5 +1,11 @@
 # Path Pundit: Analysis, Design and Application of a Branch and Bound Solution to the Travelling Salesman Problem (TSP)
 
+## Group Members
+- Alano, Ruzel Luigi
+- Dellava, Joanna
+- Panela, Alexandra Princess
+- Viado, John Paul
+
 ## Installation steps:
 ### 1. Pre-requiste install programs
 Make sure to you have or already installed **Git**, **NodeJS**, and **MYSQL** in your device
